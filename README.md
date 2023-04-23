@@ -7,7 +7,7 @@ Aplicación flask para gestiónar base de datos de albums.
 3. python3 -m venv venv <br>
 4. venv\Scripts\activate 
 
-## Instalar flas
+## Instalar flask
 pip install Flask<br>
 pip install flask-mysqldb
 
