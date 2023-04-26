@@ -1,5 +1,5 @@
 # Flask-discografica-app
-Aplicación flask para gestiónar base de datos de albums.
+Aplicación flask para gestiónar base de datos de albums. En nuestro caso, utilizamos la herramienta MobaXterm e instancias de AWS.
 
 ## Opcional
 Eliminar o clonar este repositorio
