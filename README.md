@@ -41,6 +41,6 @@ export FLASK_APP=App.py
 ```
 flask run --host=0.0.0.0
 ```
-##Compartir link a terceros
+## Compartir link a terceros
 http://ip_publica_app:5000/
 http://44.204.2.197:5000/
