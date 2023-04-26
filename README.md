@@ -1,15 +1,34 @@
 # Flask-discografica-app
 Aplicación flask para gestiónar base de datos de albums.
 
-## Crear entorno Virtual
-1. mkdir myproject<br>
-2. cd myproject<br>
-3. python3 -m venv venv <br>
-4. venv\Scripts\activate 
+#Opcional
+Eliminar o clonar este repositorio
+----------------------------------------------------------------------
+rm -rf Flask-app-ta2-so
+git clone https://github.com/NikoleSpace/Flask-app-ta2-so.git
 
-## Instalar flask
-pip install Flask<br>
-pip install flask-mysqldb
+## Visualiar directorios, entrar a "ta2"
+----------------------------------------------------------------------
+ls
+cd ta2
 
-## Ejecutar la Aplcación
-flask run
+## Activar entorno virtual
+Comprobar que el archivo "activate" en app/bin/activate existe, luego
+activar entorno virtual y entrar a la carpeta
+----------------------------------------------------------------------
+ls app/bin
+. app/bin/activate
+cd Flask-app-ta2-so
+
+## Base de Datos
+Cambiar clave publica de la base de datos
+----------------------------------------------------------------------
+nano App.py
+export FLASK_APP=App.py
+
+## Ejecutar la Aplicación
+flask run --host=0.0.0.0
+
+##Compartir link a terceros
+http://ip_publica_app:5000/
+http://44.204.2.197:5000/
