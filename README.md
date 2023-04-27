@@ -30,7 +30,7 @@ ls app/bin
 cd Flask-app-ta2-so
 ```
 ## Base de Datos
-Cambiar clave publica de la base de datos
+Cambiar clave publica de la base de datos, en la parte de << app.config['MYSQL_HOST'] >>. Debido a que esta cambia cada vez que se detiene la instancia.
 ```
 nano App.py
 ```
