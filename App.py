@@ -4,7 +4,7 @@ from flask_mysqldb import MySQL
 app = Flask(__name__)
 
 # MySQL connection
-app.config['MYSQL_HOST'] = '54.157.55.8'
+app.config['MYSQL_HOST'] = '3.82.101.125'
 app.config['MYSQL_USER'] = 'support'
 app.config['MYSQL_PASSWORD'] = 'sistemas20.'
 app.config['MYSQL_DB'] = 'BDAlbum' #db_album
@@ -36,7 +36,7 @@ def add_album():
 @app.route('/edit/<id>')
 def get_album(id):
     cur = mysql.connection.cursor()
-    cur.execute('SELECT * FROM album WHERE id = %s', (id))  
+    cur.execute('SELECT * FROM album WHERE id = %s', [id])  
     data = cur.fetchall()
     #print(data[0])
     return render_template('edit-album.html', album = data[0]) 
